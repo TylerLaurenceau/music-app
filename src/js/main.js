@@ -12,40 +12,38 @@ function test(data, callback) {
         success: callback
     })
 };
-
 //______________________________________________________________________________
 function processSongs(songs) {
   $(".content").empty();
     console.log(songs)
     for (var i = 0; i < songs.length; i++) {
-        $(".content").append(`<div class="song">
+        $(".content").append(`
+          <div class = "song">
           <div class = "art"><img src = "${songs[i].artwork_url}"/></div>
           <div class = "url">${songs[i].stream_url}?client_id=${token}</div>
           <div class = "title">${songs[i].title}</div>
-        </div>
-        `)
+          <div class = "genre">Genre: ${songs[i].genre}</div>
+        </div>`)
     }
     $(".art").click(pictureClicker)
 }
 //______________________________________________________________________________
 $("#searchButton").click(searchClicker);
-
 function searchClicker(event) {
     event.preventDefault();
     var searchBar = $("#searchBar").val();
     test(searchBar, processSongs);
+    console.log(pictures);
 };
 //______________________________________________________________________________
 function pictureClicker(event) {
     var target = $(event.currentTarget).next(".url").html();
     console.log(target)
     playSong(target);
-    console.log("working")
 };
 //______________________________________________________________________________
 function playSong(target) {
-    $(".music").html(`<audio src="${target}" controls></audio>`)
-    //console.log(target);
+    $(".music").html(`<audio src="${target}" controls autoplay></audio>`)
 };
 
 
