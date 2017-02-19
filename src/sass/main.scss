@@ -28,13 +28,6 @@ body{
     position:relative;
 }
 
-.results{
-  margin-left: 325px;
-  color: lightpink;
-  font-size:25px;
-  margin-top: 10px;
-}
-
 form{
   margin-left: 450px;
   margin-top: 30px;
@@ -70,12 +63,26 @@ button:hover{
   transition: .1s;
 }
 
+.quote{
+  position: absolute;
+  top:150px;
+  left:50px;
+  font-family: 'Pacifico', cursive;
+  color:white;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px black;
+
+  .pink{
+    color:lightpink;
+    font-family: 'Pacifico', cursive;
+  }
+}
+
 .music{
-  width: 100px;
 }
 
 audio{
-  width: 1264px;
+  width: 1265px;
 }
 
 .song{
