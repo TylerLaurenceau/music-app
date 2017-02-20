@@ -2,7 +2,7 @@
 
 ![music](http://www.findingtomorrowland.net/wp-content/uploads/2016/11/Cool-abstract-art-DJ-Boy-wallpaper-in-hd.jpg)
 
-[Link to live site](tiy-boss-music-app.surge.sh)
+[Link to live site](http://tiy-boss-music-app.surge.sh)
 
 #Learning Objectives
 * Have a strong understanding of how to read API documentation and make use of it.
