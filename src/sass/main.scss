@@ -4,6 +4,7 @@
 
 *{
   font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px black;
 
 }
 
@@ -109,7 +110,8 @@ audio{
   width: 150px;
   margin-bottom: 10px;
   opacity: .7;
-  transition-duration: 0.5s
+  transition-duration: 0.5s;
+  border: white solid 1px;
 }
 
 .art img:hover{
@@ -123,4 +125,8 @@ border-radius: 100px;
 .genre{
   margin-top: 10px;
   color:black;
+}
+
+.musicnote{
+  color:white;
 }
