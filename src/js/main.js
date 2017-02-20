@@ -14,7 +14,7 @@ function test(data, callback) {
 };
 //______________________________________________________________________________
 function processSongs(songs) {
-  $(".content").empty();
+    $(".content").empty();
     console.log(songs)
     for (var i = 0; i < songs.length; i++) {
         $(".content").append(`
@@ -29,6 +29,7 @@ function processSongs(songs) {
 }
 //______________________________________________________________________________
 $("#searchButton").click(searchClicker);
+
 function searchClicker(event) {
     event.preventDefault();
     var searchBar = $("#searchBar").val();
