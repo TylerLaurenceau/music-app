@@ -21,10 +21,9 @@ body {
     border-top: 1px solid black;
     background: black;
 }
-
 .headPic img {
     max-width: 100%;
-    width: 1265px;
+    width:1280px;
     height: 650px;
     position: relative;
 }
@@ -83,6 +82,7 @@ button:hover {
 
 audio {
     width: 1265px;
+    margin-left: 6px;
 }
 
 .song {
