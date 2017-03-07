@@ -20,12 +20,13 @@ body {
     font-size: 30px;
     border-top: 1px solid black;
     background: black;
+    overflow: hidden;
 }
+
 .headPic img {
-    max-width: 100%;
-    width:1280px;
-    height: 650px;
+    max-width: 1280px;
     position: relative;
+    overflow: hidden;
 }
 
 form {
